@@ -3,6 +3,8 @@
 * KEY TAKEAWAY FOR RECYCLER VIEW
 * Effeciency is built in --> onCreate inflates onBlind is cheap
 * only create as many views that fit on the screen
+*
+* Parcelers send an object from one Activity to another https://www.youtube.com/watch?v=sNeRRewIF2s
  */
 package com.example.flixster;
 
