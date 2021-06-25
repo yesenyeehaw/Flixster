@@ -1,22 +1,26 @@
-# Project 2 - *Flixster*
+# Project 2 - Flixster
 
-**Flixster** is an android app that allows building a todo list and basic todo items management functionality including adding new items, editing and deleting an existing item.
+Flixster shows the latest movies currently playing in theaters. The app utilizes the Movie Database API to display images and basic information about these movies to the user.
 
-Submitted by: **Your Name Here**
-
-Time spent: **X** hours spent in total
+Time spent: 12 hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
-* [ ] User can **view a list of todo items**
-* [ ] User can **successfully add and remove items** from the todo list
-* [ ] User's **list of items are persisted** across app restarts
+* [x] User can **scroll through current movies** from the Movie Database API
+* [x] Display a nice default [placeholder graphic](https://guides.codepath.org/android/Displaying-Images-with-the-Glide-Library#advanced-usage) for each image during loading
+* [x] For each movie displayed, user can see the following details:
+  * [x] Title, Poster Image, Overview (Portrait mode)
+  * [x] Title, Backdrop Image, Overview (Landscape mode)
+* [x] Allow user to view details of the movie including ratings within a separate activity
 
-The following **bonus** features are implemented:
+The following **stretch** features are implemented:
 
-* [ ] User can **tap a todo item in the list and bring up an edit screen for the todo item** and then have any changes to the text reflected back in the todo list
+* [ ] Improved the user interface by experimenting with styling and coloring.
+* [x] Apply rounded corners for the poster or background images using [Glide transformations](https://guides.codepath.org/android/Displaying-Images-with-the-Glide-Library#transformations)
+* [ ] Apply the popular [View Binding annotation library](http://guides.codepath.org/android/Reducing-View-Boilerplate-with-ViewBinding) to reduce boilerplate code.
+* [x] Allow video trailers to be played in full-screen using the YouTubePlayerView from the details screen.
 
 The following **additional** features are implemented:
 
@@ -33,6 +37,11 @@ GIF created with [Kap](https://getkap.co/).
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+## Open-source libraries used
+
+- [Android Async HTTP](https://github.com/loopj/android-async-http) - Simple asynchronous HTTP requests with JSON parsing
+- [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Android
 
 ## License
 
