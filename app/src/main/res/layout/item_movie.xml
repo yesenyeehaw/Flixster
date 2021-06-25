@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
+
     <ImageView
         android:id="@+id/ivPoster"
         android:layout_width="120dp"
-        android:layout_height="wrap_content"
+        android:layout_height="150dp"
         android:contentDescription="@string/todo"
         tools:srcCompat="@tools:sample/avatars" />
 
@@ -24,11 +25,13 @@
     <TextView
         android:id="@+id/tvOverview"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/tvTitle"
         android:layout_marginStart="6dp"
         android:layout_marginTop="5dp"
         android:layout_toEndOf="@+id/ivPoster"
+        android:maxHeight="120dp"
+        android:scrollbars="vertical"
         tools:text="Following the events at home, the Abbott family now face the terrors of the outside world. Forced to venture into the unknown, they realize that the creatures that hunt by sound are not the only threats that lurk beyond the sand path." />
 
 </RelativeLayout>

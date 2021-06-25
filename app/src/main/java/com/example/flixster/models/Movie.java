@@ -15,6 +15,7 @@ public class Movie {
     String title;
     String overview;
     Double voteAverage;
+    int movieId;
 
     // no-arg, empty constructor required for Parceler
     public Movie() {}
@@ -24,6 +25,7 @@ public class Movie {
     }
 
     public Movie(JSONObject jsonObject) throws JSONException {
+        movieId = jsonObject.getInt("id");
         posterPath = jsonObject.getString("poster_path");
         backdropPath = jsonObject.getString("backdrop_path");
         title = jsonObject.getString("title");
@@ -54,4 +56,6 @@ public class Movie {
     public String getOverview() {
         return overview;
     }
+
+    public int getMovieId() { return  movieId; }
 }
